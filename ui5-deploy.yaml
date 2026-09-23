@@ -20,7 +20,7 @@ builder:
         app:
           name: ZTESTASSIA8
           package: ZFIORI_BAS
-          transport: SSOK900081
+          transport: SSOK900084
         exclude:
           - /test/
           - /localService/
