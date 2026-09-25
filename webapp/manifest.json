@@ -1,7 +1,7 @@
 {
   "_version": "1.89.0",
   "sap.app": {
-    "id": "oveetest.project1.v2",
+    "id": "oveetest.project1.v11",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
