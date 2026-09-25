@@ -18,10 +18,11 @@ builder:
           url: http://sso:8000
           client: '100'
         app:
-          name: ZTESTASSIA11
+          name: #ZTESTASSIA11
           package: ZFIORI_BAS
-          transport: SSOK900081
+          transport: #SSOK900081
         exclude:
           - /test/
           - /localService/
           
+  
