@@ -1,0 +1,27 @@
+---
+general:
+  buildTool: "npm"
+service:
+  buildToolVersion: "N24"
+  transportRequestIdSource: "parameter"
+  cloudConnectors:
+    transportRequestUploadCTS:
+      credentialId: "cloud-connector-ovee"
+stages:
+  Release:
+    transportRequestUploadCTS: true
+  Build:
+    npmExecuteLint: false
+  Additional Unit Tests:
+    npmExecuteScripts: false
+  Malware Scan:
+    malwareExecuteScan: true
+  Compliance:
+    sonarExecuteScan: false
+steps:
+  transportRequestUploadCTS:
+    endpoint: "http://sso:8000"
+    uploadCredentialsId: "sso"
+    abapPackage: "ZFIORI_BAS"
+    applicationName: "ZTESTASSIA12"
+    transportRequestId: "SSOK900081"
